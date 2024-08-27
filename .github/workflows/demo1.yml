@@ -1,10 +1,9 @@
 name: demo1
-
 on:
   workflow_dispatch:
-
-  jogs:
-    demo1:
-      runs-on: ubunts-latest
-        - name: Greet
-          run: echo "Hallow world!"
+jobs:
+  demo1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet
+        run: echo "Hello world!"
